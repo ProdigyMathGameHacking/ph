@@ -1,5 +1,4 @@
-import { ToHack } from "./convert";
-import { doYml } from "./readinput";
+import { UI } from "./ui";
 
 
-console.log(doYml("./sample/CloseAllPopups.ph"));
+console.log(UI());

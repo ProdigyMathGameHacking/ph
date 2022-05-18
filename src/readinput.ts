@@ -1,6 +1,5 @@
 import YAML from "yaml";
 import * as fs from "fs";
-import * as path from "path";
 import { ToHack, ToToggler } from "./convert";
 
 export function doYml (FilePath : string) {
@@ -29,15 +28,15 @@ export function doYml (FilePath : string) {
 
 function ymlHack (yml : any) {
 
-    const type : String = "Hack";
     const category : String = yml.category;
     const name : String = yml.name;
     const description : String = yml.description;
     const return_ : String = yml.return;
     const setClick : String = yml.setClick;
+    const usingYml : boolean = true;
 
 
-    return ToHack(type, category, name, description, return_, setClick);
+    return ToHack(category, name, description, return_, setClick, usingYml);
 
 
 }
@@ -46,7 +45,6 @@ function ymlHack (yml : any) {
 
 function ymlToggler (yml : any) {
 
-    const type : String = "Toggler";
     const category : String = yml.category;
     const name : String = yml.name;
     const description : String = yml.description;
@@ -54,8 +52,9 @@ function ymlToggler (yml : any) {
     const returnDisabled : String = yml.returnDisabled;
     const setEnabled : String = yml.setEnabled;
     const setDisabled : String = yml.setDisabled;
+    const usingYml : boolean = true;
 
-    return ToToggler(type, category, name, description, returnEnabled, returnDisabled, setEnabled, setDisabled);
+    return ToToggler(category, name, description, returnEnabled, returnDisabled, setEnabled, setDisabled, usingYml);
 
 
 }

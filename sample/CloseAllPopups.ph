@@ -4,7 +4,7 @@ name: "Close all popups"
 description: "Closes all popups in Prodigy."
 
 return: |
-  Toast.fire("Closed!", "All open popups were closed.", "success");
+  All open popups were closed
 
 setClick: |
   _.instance.prodigy.open.menuCloseAll();

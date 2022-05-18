@@ -5,9 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "setup": "npm install",
-
     "build": "npx tsc",
-
     "start": "node dist"
   },
   "repository": {
