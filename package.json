@@ -1,0 +1,27 @@
+{
+  "name": "prodigyh",
+  "version": "2.1.9",
+  "description": "Language for making Prodigy hacks",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProdigyPNP/ph.git"
+  },
+  "keywords": [
+    "prodigy"
+  ],
+  "author": "ProdigyPNP",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/ProdigyPNP/ph/issues"
+  },
+  "homepage": "https://github.com/ProdigyPNP/ph#readme",
+  "dependencies": {
+    "@types/node": "^17.0.34",
+    "typescript": "^4.6.4",
+    "yaml": "^2.1.0"
+  }
+}
