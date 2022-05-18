@@ -2,9 +2,13 @@
   "name": "prodigyh",
   "version": "2.1.9",
   "description": "Language for making Prodigy hacks",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "setup": "npm install"
+    "setup": "npm install",
+
+    "build": "npx tsc",
+
+    "start": "node dist"
   },
   "repository": {
     "type": "git",
