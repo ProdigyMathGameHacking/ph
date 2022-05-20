@@ -33,14 +33,13 @@ const convert_1 = require("./convert");
 function doYml(FilePath) {
     const file = fs.readFileSync(FilePath, "utf8");
     const yml = yaml_1.default.parse(file);
-    if (yml.type == "Hack") {
-        return ymlHack(yml);
-    }
-    else if (yml.type == "Toggler") {
-        return ymlToggler(yml);
-    }
-    else {
-        return console.error("Unknown type: " + yml.type);
+    switch (yml.type) {
+        case "Hack":
+            return ymlHack(yml);
+        case "Toggler":
+            return ymlToggler(yml);
+        default:
+            return console.error("Unknown type: " + yml.type);
     }
 }
 exports.doYml = doYml;

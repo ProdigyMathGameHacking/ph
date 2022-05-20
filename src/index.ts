@@ -1,4 +1,4 @@
-import { UI } from "./ui";
+import * as UI from "./ui";
 
 
-console.log(UI());
+console.log(UI.UI());
